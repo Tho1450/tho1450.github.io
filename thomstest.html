@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swump Emporium</title>
+    <link rel="stylesheet" href="swumpstil.css">
+    <link rel="icon" href="images/autismcreature.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <header>
+        <a href="index.html"><img id="logo" src="assets/images/Arcanenobg.png" alt="Arcane Emporium Logo" Title="The Arcane Emporium"></a>
+        <div id="mobile-warning">
+            <p>For best experience, use mobile!</p>
+        </div>
+
+        <div> <!--Burgar menyn-->
+            <a href="javascript:void(0);" onclick="hamburgerMenu()">☰</a>
+        </div>
+        <nav id="myLinks"> <!--Burgar menyns innehåll. Ändra ordning på dessa senare, gör bara så att de finns-->
+            <a href="ommig.html">Om mig</a>
+            <a href="kontakter.html">Kontakter</a>
+            <a href="swumpar.html">Swumpar</a>
+            <a href="instagram.html">Instagram</a> <!--Kanske lägg denna längst ner på hemsidan eller i samma grej som kontakter?-->
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="slogan">
+            <h1 class="logofont" id="welcome">Welcome to <br> The Arcane Emporium</h1>
+            <p class="logofont" id="tagline">Where ancient magic meets modern commerce <br> — Est. MXLII</p>
+            <div class="review">
+                <p>"The cursed ring ruined my life. 5 stars." <br><br> - Gandalf T.</p>
+                <img src="assets/images/grandalf.webp" alt="An image of the wizard Grandalf" title="The Supreme sorcerer Grandalf">
+            </div>
+            <div class="review">
+                <img src="assets/images/merlin.webp" alt="An image of the wizard morlin" title="The great Morlin">
+                <p>"My familiar ate my grimoire. Still worth it."<br><br>- Merlin K.</p>
+            </div>
+        </section>
+
+        <section id="new-arrivals">
+        <h2>New Arrivals</h2>
+        <div id="product-grid">
+            <div class="product-card">
+                <img src="assets/images/billy.jpg" alt="Necronomicon Lite" title="Necronomicon Lite">
+                <h3>Necronomicon Lite</h3>
+                <p>For the budget-conscious necromancer.</p>
+                <p class="price">49 gold</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="assets/images/mildring.jpg" alt="Ring of Mild Inconvenience" title="Ring of Mild Inconvenience">
+                <h3>Ring of Mild Inconvenience</h3>
+                <p>Mostly harmless. Mostly..</p>
+                <p class="price">12 gold</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="assets/images/blurryball.jpg" alt="Crystal Ball" title="Crystal Ball - Blurry">
+                <h3>Crystal Ball (Blurry)</h3>
+                <p>No refunds on prophecies.</p>
+                <p class="price">88 gold</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="assets/images/dragontongue.jpg" alt="Dragon Tongue Scroll" title="Dragon Tongue Scroll">
+                <h3>Dragon Tongue Scroll</h3>
+                <p>Slightly singed. Handle with care.</p>
+                <p class="price">35 gold</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="assets/images/skull.png" alt="Decorative Skull" title="Decorative Skull">
+                <h3>Decorative Skull</h3>
+                <p>Whispers occasionally.</p>
+                <p class="price">22 gold</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="assets/images/potion.jpg" alt="Beginner's Potion Kit" title="Beginner's Potion Kit">
+                <h3>Beginner's Potion Kit</h3>
+                <p>Includes one dragon scale.</p>
+                <p class="price">55 gold</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="assets/images/serpent.jpg" alt="Serpent Familiar" title="Serpent Familiar">
+                <h3>Serpent Familiar</h3>
+                <p>Loyal. Mostly.</p>
+                <p class="price">120 gold</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="assets/images/staff.png" alt="Staff of Questionable Power" title="Staff of Questionable Power">
+                <h3>Staff of Questionable Power</h3>
+                <p>Results may vary.</p>
+                <p class="price">75 gold</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    </main>
+    
+
+    <footer>
+        <p>The Arcane Emporium	&#174;</p>
+    </footer>
+    <script>
+    
+
+
+
+
+//hanterar cartchange
+    var cartItems = 0;
+
+function addToCart() {
+    cartItems++;
+    document.getElementById("cartimg").src = "assets/images/fullcart.png";
+    document.getElementById("cartcount").textContent = cartItems;
+}
+
+
+//Hamburger dropdown meny
+function hamburgerMenu() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+    </script>
+</body>
+</html>

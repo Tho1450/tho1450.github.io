@@ -1,0 +1,229 @@
+@font-face {
+  font-family: BigWiz;
+  src: url(assets/fonts/dos-font.otf);
+}
+@font-face {
+  font-family: Logo;
+  src: url(assets/fonts/OldWizard.ttf);
+}
+@font-face {
+  font-family: Runey;
+  src: url(assets/fonts/runescape_bold.ttf);
+}
+@font-face {
+  font-family: Fancy;
+  src: url(assets/fonts/JacquardaBastarda9-Regular.ttf);
+}
+
+
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #0D0D0D;
+  color: #F4B342;
+  row-gap:2rem;
+  width:100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.2rem solid #8F0177;
+  padding: 0;
+  background-color: #230255;
+  position:sticky;
+  top:0;
+  box-sizing: border-box;
+  width:100%;
+}
+
+#logo {
+  height: 8rem;
+  width: auto;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header div a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.5rem;
+  color: #F4B342;
+}
+
+header div a:last-child {
+  font-size: 3rem;
+}
+
+#myLinks {
+  display: none;
+  position: absolute;
+  top: 6.2rem;
+  right: 0;
+  background-color: #360185;
+  border-left: 0.2rem solid #8F0177;
+  border-bottom: 0.2rem solid #8F0177;
+  max-width: 100vw
+}
+
+#myLinks a {
+  display: block;
+  font-family: BigWiz;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 1.2rem;
+  color: #F4B342;
+}
+
+#myLinks a:hover {
+  color: #DE1A58;
+}
+
+#cartimg {
+  width: 5rem;
+  height: auto;
+}
+
+#slogan{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height:50vh;
+  background-color: #20077a9d;
+  padding:0 0.5rem;
+  border-top:0.1rem solid yellow; 
+  border-bottom:0.1rem solid yellow; 
+  box-sizing:border-box;
+}
+
+.logofont{
+  font-family:Logo;
+}
+
+#welcome{
+  margin:0;
+}
+#tagline {
+  font-size:1.3rem !important;
+  margin-top: 0;
+}
+
+
+.review{
+  display:flex;
+  width:100%;
+  background-color: #170136;
+  border: 0.2rem dotted red;
+  font-family: Runey;
+  font-size: 1.1rem;
+  overflow:hidden;
+}
+
+.review img {
+  height:7rem;
+}
+
+
+#new-arrivals {
+  padding: 2rem;
+}
+
+#new-arrivals h2 {
+  font-family: Logo;
+  font-size: 2rem;
+  color: #F4B342;
+  margin-bottom: 1rem;
+}
+
+#product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.product-card {
+  background-color: #230255;
+  border: 0.1rem solid #8F0177;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-family: Logo;
+  font-size: 1.2rem;
+  color: #F4B342;
+  margin: 0.5rem 0;
+}
+
+.product-card p {
+  font-family: BigWiz;
+  font-size: 1rem;
+  color: #F4B342;
+  margin: 0.3rem 0;
+}
+
+.price {
+  color: #DE1A58 !important;
+  font-size: 1.2rem !important;
+}
+
+.product-card button {
+  margin-top: auto;
+  padding: 0.5rem 1rem;
+  background-color: #DE1A58;
+  color: #F4B342;
+  border: none;
+  font-family: BigWiz;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #8F0177;
+}
+
+footer {
+  display:flex;
+  justify-content: center;
+  font-family: Logo;
+}
+
+#cartcount {
+    font-family: BigWiz;
+    font-size: 1rem;
+    color: #DE1A58;
+}
+
+
+#mobile-warning {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    #mobile-warning {
+        display: block;
+    }
+}
