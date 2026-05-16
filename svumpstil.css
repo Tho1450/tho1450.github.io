@@ -85,15 +85,13 @@ header div a:last-child {
   align-items: center;
   text-align: center;
   height:50vh;
-  background-color: #20077a9d;
+  background-color: #e4cfa9;
   padding:0 0.5rem;
-  border-bottom:0.1rem solid yellow; 
+  border-bottom:0.2rem solid #52002b; 
   box-sizing:border-box;
 }
 
-.logofont{
-  font-family:Logo;
-}
+
 
 #welcome{
   margin:0;
