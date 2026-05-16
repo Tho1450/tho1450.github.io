@@ -123,7 +123,8 @@ header div a:last-child {
 
 #new-arrivals h2 {
   font-size: 2rem;
-  color: #F4B342;
+  font-weight:700;
+  color: #2C1810;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -135,8 +136,8 @@ header div a:last-child {
 }
 
 .product-card {
-  background-color: #230255;
-  border: 0.1rem solid #8F0177;
+  background-color: #90ebc8c4;
+  border: 0.1rem solid #ffb0c2;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -151,22 +152,23 @@ header div a:last-child {
 }
 
 .product-card h3 {
-  font-family: Logo;
   font-size: 1.2rem;
-  color: #F4B342;
+  font-weight: 700;
+  color: #2C1810;
   margin: 0.5rem 0;
 }
 
 .product-card p {
-  font-family: BigWiz;
   font-size: 1rem;
-  color: #F4B342;
+  color: #2C1810;
   margin: 0.3rem 0;
 }
 
 .price {
-  color: #DE1A58 !important;
+  color: #2C6E49 !important;
   font-size: 1.2rem !important;
+  font-weight: 700 !important;
+
 }
 
 .product-card button {
