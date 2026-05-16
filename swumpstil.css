@@ -27,9 +27,8 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  background-color: #0D0D0D;
-  color: #F4B342;
-  row-gap:2rem;
+  background-color: #dfe687;
+  color: #52002b;
   width:100%;
 }
 
@@ -37,9 +36,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 0.2rem solid #8F0177;
+  border-bottom: 0.2rem solid #52002b;
   padding: 0;
-  background-color: #230255;
+  background-color: #ffb0c2;
   position:sticky;
   top:0;
   box-sizing: border-box;
@@ -60,7 +59,7 @@ header div a {
   font-size: 1.5rem;
   text-decoration: none;
   padding: 0.5rem;
-  color: #F4B342;
+  color: #52002b;
 }
 
 header div a:last-child {
@@ -105,7 +104,6 @@ header div a:last-child {
   height:50vh;
   background-color: #20077a9d;
   padding:0 0.5rem;
-  border-top:0.1rem solid yellow; 
   border-bottom:0.1rem solid yellow; 
   box-sizing:border-box;
 }
@@ -147,11 +145,12 @@ header div a:last-child {
   font-size: 2rem;
   color: #F4B342;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 #product-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 }
 
@@ -167,7 +166,7 @@ header div a:last-child {
 
 .product-card img {
   width: 100%;
-  height: 10rem;
+  height: 15rem;
   object-fit: cover;
 }
 
