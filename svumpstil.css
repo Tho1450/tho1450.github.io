@@ -67,11 +67,10 @@ header div a:last-child {
 
 #myLinks a {
   display: block;
-  font-family: BigWiz;
   font-size: 1.5rem;
   text-decoration: none;
   padding: 1.2rem;
-  color: #F4B342;
+  color: #2C1810
 }
 
 #myLinks a:hover {
