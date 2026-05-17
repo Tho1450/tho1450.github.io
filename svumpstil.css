@@ -77,19 +77,37 @@ header div a:last-child {
 }
 
 header div a#hamburgerToggle {
-  transition: transform 0.5s ease;
+  display: inline-block;
+  transform-origin: center;
 }
 
 header div a#hamburgerToggle.rotate {
-  animation: rotate360 0.5s ease forwards;
+  animation: rotate360 0.55s ease forwards;
+}
+
+header div a#hamburgerToggle.rotate .hamburger-icon {
+  display: inline-block;
+  animation: scalePulse 0.55s ease forwards;
 }
 
 @keyframes rotate360 {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes scalePulse {
+  0% {
+    transform: scale(0.92);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 

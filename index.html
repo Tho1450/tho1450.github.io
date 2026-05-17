@@ -16,13 +16,13 @@
         </div>
 
         <div> <!--Burgar menyn-->
-            <a id="hamburgerToggle" href="javascript:void(0);" onclick="hamburgerMenu()">☰</a>
+            <a id="hamburgerToggle" href="javascript:void(0);" onclick="hamburgerMenu()"><span class="hamburger-icon">☰</span></a>
         </div>
         <nav id="myLinks"> <!--Burgar menyns innehåll. Ändra ordning på dessa senare, gör bara så att de finns-->
             <a href="subsidor/ommig.html">Om mig</a>
             <a href="subsidor/kontakter.html">Kontakter</a>
             <a href="subsidor/svumpar.html">Svumpar</a>
-            <a href="https://www.instagram.com/creations.by.lojsan/">Instagram</a> <!--Kanske lägg denna längst ner på hemsidan eller i samma grej som kontakter?-->
+            <a href="https://www.instagram.com/creations.by.lojsan/"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a> <!--Kanske lägg denna längst ner på hemsidan eller i samma grej som kontakter?--> <!--Nej lägg den i menyn, det är ju advetisment //Noah-->
         </nav>
     </header>
 
@@ -125,8 +125,9 @@ function hamburgerMenu() {
     var btn = document.getElementById("hamburgerToggle");
     x.classList.toggle("open");
     btn.classList.remove("rotate");
-    void btn.offsetWidth;
-    btn.classList.add("rotate");
+    setTimeout(function() {
+        btn.classList.add("rotate");
+    }, 0);
 }
     </script>
 </body>
