@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><img id="logo" src="assets/images/logovariants/CBL logo square utan ram.png" alt="Creations By Lojsan logo" Title="Creations By Lojsan"></a>
+        <a href="index.html"><img id="logo" src="assets/images/logovariants/CBLlogosquareutanram.png" alt="Creations By Lojsan logo" Title="Creations By Lojsan"></a>
         <div id="mobile-warning">
             <p>För bästa upplevelse, använd mobil!</p>
         </div>
@@ -18,7 +18,7 @@
         <div> <!--Burgar menyn-->
             <a href="javascript:void(0);" onclick="hamburgerMenu()">☰</a>
         </div>
-        <nav id="myLinks"> <!--Burgar menyns innehåll. Ändra ordning på dessa senare, gör bara så att de finns-->
+        <nav id="links"> <!--Burgar menyns innehåll. Ändra ordning på dessa senare, gör bara så att de finns-->
             <a href="ommig.html">Om mig</a>
             <a href="kontakter.html">Kontakter</a>
             <a href="https://www.instagram.com/creations.by.lojsan/">Instagram</a> <!--Kanske lägg denna längst ner på hemsidan eller i samma grej som kontakter?-->
@@ -27,23 +27,23 @@
 
     <main>
 
-        <section id="slogan">
+        <section id="intro">
             <h1 class="logofont" id="welcome">Vem är jag?</h1> [LÄGG MER MELLANRUM MELLAN "Vem är jag" TEXTEN OCH TOPPEN AV SIDAN, DET SKA VARA SAMMA DISTANS PÅ DEN TEXTEN SOM DET ÄR MELLAN DESS BESKRIVNING OCH "Svumpar?" TEXTEN]
             <p class="logofont" id="tagline">Jag heter [kunds namn] men går under smeknamnet Lojsan. Jag är/Jag gillar [kund får lägga in valfri info om sig själv]</p>
             <h1 class="logofont" id="welcome">Svumpar? [Kan ändra den här texten till nåt annat]</h1>
             <p>Svumparna är mitt eget lilla ler-projekt. En dag så inspirerades jag av... och bestämde mig för att jag också ville skapa något kreativt vilket ledde till idean på svumparna och deras lilla by</p>
-            <div class="review">
+            <div class="beskrivning">
             </div>
         </section>
+
+    </main>
 
     <footer>
         <p>Creations by Lojsan&#174;</p>
     </footer>
     <script>
-
-//Hamburger dropdown meny
 function hamburgerMenu() {
-    var x = document.getElementById("myLinks");
+    var x = document.getElementById("links");
     if (x.style.display === "block") {
         x.style.display = "none";
     } else {
