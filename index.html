@@ -16,7 +16,7 @@
         </div>
 
         <div> <!--Burgar menyn-->
-            <a href="javascript:void(0);" onclick="hamburgerMenu()">☰</a>
+            <a id="hamburgerToggle" href="javascript:void(0);" onclick="hamburgerMenu()">☰</a>
         </div>
         <nav id="myLinks"> <!--Burgar menyns innehåll. Ändra ordning på dessa senare, gör bara så att de finns-->
             <a href="subsidor/ommig.html">Om mig</a>
@@ -122,11 +122,11 @@ function addToCart() {
 //Hamburger dropdown meny
 function hamburgerMenu() {
     var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
+    var btn = document.getElementById("hamburgerToggle");
+    x.classList.toggle("open");
+    btn.classList.remove("rotate");
+    void btn.offsetWidth;
+    btn.classList.add("rotate");
 }
     </script>
 </body>
