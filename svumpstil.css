@@ -165,7 +165,7 @@ header div a:last-child {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #9e0a0a7a;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #4e01017a;
 }
 
 .product-card img {
@@ -173,7 +173,7 @@ header div a:last-child {
   height: 15rem;
   object-fit: cover;
   border: 0.1rem solid #2C1810;
-  box-shadow: 0.2rem 0.2rem 0.5rem #8b074b7a;
+  box-shadow: 0.2rem 0.2rem 0.5rem #4e01017a;
 
 }
 
